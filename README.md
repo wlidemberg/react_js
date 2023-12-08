@@ -30,3 +30,4 @@
 - Porém ela não vem configurada para React;
 - Temos que acessar **File > Settings > Extensions** e procurat por **Emmet**
 - Lá vamos incluir a linguagem: **Javascript - Javascriptreact**
+
