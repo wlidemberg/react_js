@@ -76,3 +76,18 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - No React os eventos já estão **prontos**, podemos utlizar **onClick** para ativar uma função ao clicar em um elemento;
  - Esta função é criada na própria função do componente;
  - As funções geralmente tem o padrão **HandleAlgumaCoisa**; 
+
+## Funções no Evento
+ - Quando as funções são simples, podemos **realizar a lógica no próprio evento**;
+ - Isso **torna o código mais 'complicado'**, por atrelar lógica ao HTML;
+ - Mas em **algumas situações** é aplicável; 
+
+## Funções de Renderização
+ - Podemos criar **funções que retornam um JSX**;
+ - Isso serve para criar situações que **dependam de outras condições**;
+ - Ou seja, o JSX a ser renderizado pode variar por alguma variável, por exemplo; 
+
+## Imagens no React
+ - As **imagens públicas** do nosso projeto pode ficar na pasta public;
+ - De lá elas podem seer chamadas pelas tags img diretamente pelo **/nome.jpg**;
+ - Pois a pasta **public fica linkada com o src das imagens**;
