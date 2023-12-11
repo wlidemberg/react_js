@@ -91,3 +91,64 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - As **imagens públicas** do nosso projeto pode ficar na pasta public;
  - De lá elas podem seer chamadas pelas tags img diretamente pelo **/nome.jpg**;
  - Pois a pasta **public fica linkada com o src das imagens**;
+
+## Imagens em assets
+ - A pasta public pode ser utilizada para colocar imagens;
+ - Mas um padrão bem utilizada para as imagens dos projetos **é colocar em uma pasta chamada assets**, em src; 
+ - Ou seja, você vai encontrar projetos com as **duas abordagens**;
+ - Em assets **precisamos importar as imagens**, e o **src é dinâmico** com o nome da importação;
+
+## Hooks
+ - Recursos do React que tem **diversas funções**;
+ - Como **guardar e alterar o estado de algum dado** na nossa apicação;
+ - Todos os hooks começam com **use**, por exemplo: **useState**;
+ - Podemos criar nossos hooks, isso é chamado de **custom hook**;
+ - Os Hooks precisam ser **importados**;
+ - Geralmente são uteis em todas as aplicações; 
+
+## useState hook
+ - O hook do **useState** é um dos mais utilizados;
+ - Utilzamos para **gerenciar um estado de algum dado**, variáveis não funcionam corretamente, o componente não re-renderiza;
+ - Para guardar o dado definimos o nome da variável e para alterar vamos utilizar o **setNome**, onde **Nome** é o nome do nosso dado;  
+
+## Renderização de Listas (map)
+ - Uma outra ação bem comum é **renderizar listas** de dados no template;
+ - Fazemos isso com os dados com tipo **array**;
+ - Utilizando o **método map** para nos auxiliar;
+ - Além dos dados podemos **inserir JSX** em cada iteração;
+
+## Propriedade Key
+ - Iterar listas sem a **propriedade key** nos gera um warning;
+ - **O React precisa de uma chave unica** em cada um dos itens iterados;
+ - Isso serve para **ajuda-lo na renderização de um componente**;
+ - Geralmente teremos um **array de objetos** e podemos colocar key como alguma chave unica, como o **id** de algum dado;
+ - Em **ultimo caso** devemos usar o **index** no método map.
+
+## Previus state
+ - **Previus state** é um recurso que nos permite pegar um dado no seu valor original dentro de um set de dado;
+ - **Isso é muito utilizado para modificar listas**, pois temos o valor antigo e transformamos em um valor novo;
+ - O **primeiro argumento** de um set sempre será o previus state;  
+
+## Renderização Condicional
+ - **Renderização Condicional** é quando imprimimos uma parte do template baseado em um condição;
+ - Ou seja, utilizando uma **checagem com if**;
+ - Isso é interessante em situações como: usuário autenticado/não autenticado;
+
+## Adicionando um else
+ - Podemos tambem realizar um **if/else no JSX**;
+ - Aqui devemos utilizar o **if ternário**;
+ - Onde temos a sintaxe -> condição ? bloco 1 : bloco 2 
+
+## Props
+ - **Props** é outro fundamento do React;
+ - Nos permite **passar valores de um componente pai para um componente filho**;
+ - Isso será muito útil quando os dados forem carregados via banco de dados, por exemplo;
+ - As props vem em um objeto no **argumento da função do componente**;
+
+## Desestruturando Props
+ - É super comum passar **mais de uma pro em um componente**;
+ - para facilitar isso o React no permite **desestruturar as propriedades**;
+ - Se temos duas props: name e age;
+ - Podemos fazer assim function MyComponent({**name, age**});
+ - Agora **não precisamos mais utilizar** props.algumaCoisa;
+ 

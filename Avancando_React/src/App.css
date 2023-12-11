@@ -1,0 +1,36 @@
+*{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+
+.secao-img{
+  width: 100%;
+  display:flex;
+}
+
+.btn{
+  width: 200px;
+  background-color: #9400D3;
+  color: #fff;
+  margin:20px 0;
+}
+
+.sucess{
+  background-color: #7CFC00;
+  width: 300px;
+  margin: 0 auto 20px auto;
+  
+}
+
+.danger{
+  background-color: #FFA500;
+  width: 300px;
+  margin: 0 auto 20px auto;
+}
