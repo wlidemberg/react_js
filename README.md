@@ -152,3 +152,36 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - Podemos fazer assim function MyComponent({**name, age**});
  - Agora **não precisamos mais utilizar** props.algumaCoisa;
  
+## Reutilização de Componentes
+ - Com **props** a **reutilização de componentes** começa a fazer sentido;
+ - Se temos os dados de 1000 carros por exemplo, podemos **reaproveitar nosso CarDetails 1000 vezes**;
+ - Isso torna nosso código mais padronizado, facilitando a manutenção;
+
+## Reutilização com Loops
+ - Os arrays de dados podem ter **muitos itens** também;
+ - Então o correto é utilizar uma **estrutura de loop(map)** para sua exibição;
+ - E com isso conseguimos realizar os **três conceitos**:
+   - Renderização de Listas;
+   - Reaproveitamento de componentes;
+   - Props; 
+
+## React Fragments
+ - Os **Reacts Fragments** são interessantes para quanto precisamos ter mais de um elemento pai num componente;
+ - Criamos um tag vazia <>...</>
+ - **E ela serve como elemento pai**, não alterando a estrutura do HTMLcom um div, por exemplo;
+
+## Children prop
+ - **Children prop** é um recurso utilizado para quando um componente precisa ter JSX dentro dele;
+ - Porém **este JSX vem do componente pai**;
+ - Então o componente age como um **container**, abraçando estes elementos;
+ - E children é considerada uma **prop do componente**;
+ 
+## Funções Props
+ - As **funções podem ser passadas para as props** normalmente;
+ - Basta criar um função no componente pai e **enviar como prop** para o componente;
+ - No componente filho ela pode ser ativada por um evento, por exemplo; 
+
+## Elevação do State
+ - Elevação de state ou **state lift** é quando um valor é elevado do componente filho para o componente pai;
+ - Geralmente temos **um componente que usa o state e outro que o altera**;
+ - Então precisamos passar a alteração para o componente pai, e este passa para o componente que usa o state;
