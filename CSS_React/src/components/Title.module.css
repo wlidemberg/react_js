@@ -1,0 +1,10 @@
+.my_title{
+    color: chocolate;
+    background-color: #111;
+    font-weight: 400;
+    margin: 10px;
+    border: 2px solid chocolate;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: center;
+}
