@@ -16,6 +16,7 @@ function App() {
       {/**CSS de Componente */}
       <MyCompenent />
       <p>Este é um paragráfo do App.js  </p>
+      
 
       {/**Inline css */}
       <p style={{color : 'blue', background : '#000', padding : '25px', textAlign : 'center', borderTop : 'Solid 20px red'}}>Este elemento foi estilizado de forma inline</p>
