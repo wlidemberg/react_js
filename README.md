@@ -185,3 +185,40 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - Elevação de state ou **state lift** é quando um valor é elevado do componente filho para o componente pai;
  - Geralmente temos **um componente que usa o state e outro que o altera**;
  - Então precisamos passar a alteração para o componente pai, e este passa para o componente que usa o state;
+------------
+# CSS React
+------------
+## CSS Global
+ - O **Css global** é utilizado para estilizar diversos elementos em comum ou fazer um reset no CSS;
+ - Utilizamos o arquivos **index.css** para isso;
+ - Ele esta na pasta src;
+
+## CSS de Componente
+ - O **Css de componente** é utilizado para um componente específico;
+ - Geralmente **é criando um arquivo como o mesmo nome do componente** e este é **importado no componente**;
+ - Note que este método **não é scoped**, ou seja, o css vaza para outros componentes se houver uma regra em,colisão;
+ - O React ja cria um exemplo desta técinica com  App.css/js
+
+## Inline Style
+ - O inline style do React é **igual o do css**;
+ - Por meio do **atributo style** conseguimos aplicar regras diretamente em um elemento;
+ - **Devemos optar por outras maneiras de css**, o inline pode dificultar a manutenção ou deixar o código imprevísivel em algumas situações;
+
+## Inline Style Dinamico
+ - **O CSS dinamico inline** aplica o estilo baseado numa condicional;
+ - Vamos inserir no atributo um **if ternário**;
+ - Dependendo da condição podemos mudar que regras de estilo um elemento recebe; 
+
+## Classes dinâmicas no CSS
+ - Podemos também aplicar lógica para **mudar a classe de CSS de um elemento**;
+ - Também utilizaremos o **if ternário**;
+ - Essa abordagem é **mais interessante que o CSS inline**;
+ - Pois as classes estarão isoladas no arquivo de CSS, resolvendo o problema de organização de código; 
+
+## CSS Modules
+ - O **CSS Modules** é um recurso de CSS **scoped**;
+ - Ou seja, ele vai ser **esclusivo do componente**;
+ - O nome do arquivo é: **Componente.module.css**;
+ - Precisamos importa-lo também no componente;
+ 
+  
