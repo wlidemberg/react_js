@@ -225,4 +225,14 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - No React vamos utilizar a **tag form** para formulários;
  - As labels dos inputs contém o atributo **htmlFor**, que deve ter o valor do name do input;
  - **Não utilizamos action**, pois o processamento será feito de forma assíncrona;
- 
+
+## Label envolvendo Input
+ - Em React um padrão comum é a **tag label envolvendo o input**;
+ - Isso faz com que o atributo for se torne **Opcional**
+ - **Simplificando nossa estrutura HTML**, sem perder a semântica;
+    ```
+        <label>
+            Nome:
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+        </label>
+    ```
