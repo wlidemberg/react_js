@@ -221,4 +221,8 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
  - O nome do arquivo é: **Componente.module.css**;
  - Precisamos importa-lo também no componente;
  
-  
+ ## Formulários e React
+ - No React vamos utilizar a **tag form** para formulários;
+ - As labels dos inputs contém o atributo **htmlFor**, que deve ter o valor do name do input;
+ - **Não utilizamos action**, pois o processamento será feito de forma assíncrona;
+ 
