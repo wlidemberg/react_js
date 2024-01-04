@@ -9,7 +9,7 @@ function App() {
       <header>
         <h1>Formulários</h1>
       </header>
-      <MyForm />
+      <MyForm user={{nome: 'Wlidemberg de Sousa', telefone: '(21)96804-5339', email: 'automatizei@gmail.com', mensagem: 'Que legal', setor: 'contabilidade'}} />
     </>
   )
 }

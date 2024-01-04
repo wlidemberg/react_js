@@ -236,3 +236,39 @@ para ultilizar esse componente dentro da estrutura basta coloca-lo dentro de tag
             <input type="text" name="nome" placeholder="Digite seu nome" />
         </label>
     ```
+## Manipulação de Valores 
+ - Para manipular os valores dos inputs vamos utilizar o **hook useState**;
+ - Ou seja, podemos armazenar na variável **e utilizar o set para alterar o valor**;
+ - Vamos criar uma função para alterar o valor no evento **onChange**;
+ - Deixando o nosso código facil de trabalhar nas próximas etapas: como envio de dados para o BD e validação;
+
+## Simplificando a manipulação
+ - Quando temos varios inputs podemos **realizar a manipulação de forma simples**;
+ - Basicamente criamos um **função inline no onChange**;
+ - Ela vai **alterar o valor do state** com o metodo set, da mesma forma da função isolada;
+
+## Envio de Formulário
+ - Para enviar um form vamos utilizar o evento **onSubmit**;
+ - **Ele chamará uma função**, e nessa devemos lembrar de parar a submissão com o **preventDefault**;
+ - Nesta etapa podemos realizar validações, envio de form para o servidor, reset de form e outras ações;
+
+## Controlled inputs 
+ - **Controlled inputs** é um recurso que nos permite mais flexibilidade nos forms de React;
+ - Precisamos apenas **igualar o valor ao state**;
+ - Um uso comum: formulário de edição, que os dados vem do back-end, conseguiremos preencher o input mais facilmente;
+
+## Resetando Formulários
+ - Com o Controller inputs limpar o formulário será **fácil**;
+ - Basta **atribuir um valor de uma string vazia no states** e pronto;
+ - Isso será feito após o envio, em formularios que o usuário precisa preencher novamente;
+
+## Input de Textarea
+ - O textare **pode ser considerado um input de texto** normal;
+ - Utilizaremos o **value** para alterar o state inicial;
+ - E o **onChange** para modificar o valor do state;
+
+## Input Select
+ - O select tambem será **muito semelhante** aos outros inputs;
+ - Quanto temos a alteração de um valor o **evento onChange** pode captar isso;
+ - O value pode atribuir qual **option** estará selecionada; 
+    
